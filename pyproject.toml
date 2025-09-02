@@ -1,0 +1,28 @@
+[project]
+name = "rlfromverifiablerewards"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "datasets>=4.0.0",
+    "docker>=7.1.0",
+    "flax>=0.7.0",
+    "jax>=0.4.13",
+    "optax>=0.1.4",
+    "orjson>=3.11.3",
+    "pydantic>=2.11.7",
+    "transformers[flax]>=4.56.0",
+    "typer>=0.17.3",
+    "wandb>=0.21.3",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "hypothesis>=6.138.13",
+    "mypy>=1.17.1",
+    "pre-commit>=4.3.0",
+    "pytest>=8.4.1",
+    "ruff>=0.12.11",
+]
