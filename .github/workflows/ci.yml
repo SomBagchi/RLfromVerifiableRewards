@@ -9,7 +9,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install dependencies
-        run: uv pip install -e .
+        run: uv pip install --system -e .
       - name: Format
         run: uv run black --check --preview .
       - name: Lint
